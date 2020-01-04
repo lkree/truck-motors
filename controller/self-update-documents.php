@@ -3,11 +3,11 @@ require_once './test/model/RequestHandler.php';
 require_once './test/model/CsvHandler.php';
 require_once './test/model/DBHandler.php';
 
-$CsvHandler = new CsvHandler('./test/data/cars.csv');
+$CsvHandler = new CsvHandler('./test/data/documents.csv');
 $parsedCsv = $CsvHandler->getArray();
 
-$DB_NAME = 'cars-1c';
-$UPDATE_KEY = 'car_id';
+$DB_NAME = 'documents-1c';
+$UPDATE_KEY = 'document_id';
 
 function sendRequests($array, $operation, $dbname, $key = '')
 {

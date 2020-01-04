@@ -1,0 +1,163 @@
+/*------------------------------- header-link -------------------------------*/
+.customer-link {
+  position: relative;
+  max-width: 80px;
+  max-height: 50px;
+  display: inline-flex !important;
+}
+.customer-link::after {
+  content: '';
+  height: 100%;
+  width: 50px;
+  background: url(/images/customer/icons/user-icon.svg) no-repeat center;
+  background-size: 30px;
+  background-color: #0279b0;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+.customer-link a {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 50px;
+}
+
+/*--------------------------------- customer-header -------------------------*/
+.customer-header {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.customer-header:hover {
+  cursor: default;
+}
+
+/*---------------------------- customer-services ----------------------------*/
+.customer-services {
+  border-left: 1px solid #c1c1c1;
+  padding-left: 50px;
+}
+.customer-services__header {
+  font-size: 20px;
+  padding: 0 0 0 30px;
+  background: url(https://truck-motors.su/test/assets/img/icons/service-icon.svg) no-repeat 0 5px;
+  background-size: 25px;
+  margin-bottom: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #616161;
+}
+.customer-services__header:hover {
+  cursor: default;
+}
+.customer-services__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.customer-services__item {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  width: 250px;
+  padding: 0 15px 0 45px;
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  color: #616161;
+}
+.customer-services__item--info {
+  background: url(https://truck-motors.su/test/assets/img/icons/info-icon.svg) no-repeat 10px center;
+  background-size: 25px;
+}
+.customer-services__item--info:hover {
+  background: url(https://truck-motors.su/test/assets/img/icons/info-icon--hover.svg) no-repeat 10px center;
+  background-size: 25px;
+}
+.customer-services__item--cars {
+  background: url(https://truck-motors.su/test/assets/img/icons/cars-icon.svg) no-repeat 10px center;
+  background-size: 25px;
+}
+.customer-services__item--cars:hover {
+  background: url(https://truck-motors.su/test/assets/img/icons/cars-icon--hover.svg) no-repeat 10px center;
+  background-size: 25px;
+}
+.customer-services__item--history {
+  background: url(https://truck-motors.su/test/assets/img/icons/history-icon.svg) no-repeat 10px center;
+  background-size: 25px;
+}
+.customer-services__item--history:hover {
+  background: url(https://truck-motors.su/test/assets/img/icons/history-icon--hover.svg) no-repeat 10px center;
+  background-size: 25px;
+}
+.customer-services__item--sign-up {
+  background: url(https://truck-motors.su/test/assets/img/icons/sign-up-icon.svg) no-repeat 10px center;
+  background-size: 25px;
+}
+.customer-services__item--sign-up:hover {
+  background: url(https://truck-motors.su/test/assets/img/icons/sign-up-icon--hover.svg) no-repeat 10px center;
+  background-size: 25px;
+}
+.customer-services__item--order-part {
+  background: url(https://truck-motors.su/test/assets/img/icons/spare-parts-icon.svg) no-repeat 10px center;
+  background-size: 25px;
+}
+.customer-services__item--order-part:hover {
+  background: url(https://truck-motors.su/test/assets/img/icons/spare-parts-icon--hover.svg) no-repeat 10px center;
+  background-size: 25px;
+}
+.customer-services__item--message {
+  background: url(https://truck-motors.su/test/assets/img/icons/message-icon.svg) no-repeat 10px center;
+  background-size: 25px;
+}
+.customer-services__item--message:hover {
+  background: url(https://truck-motors.su/test/assets/img/icons/message-icon--hover.svg) no-repeat 10px center;
+  background-size: 25px;
+}
+.customer-services__link {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
+}
+.customer-services__item:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #e31e25;
+  box-shadow: 0 0 21px -6px #000;
+}
+
+@media (max-width: 1199px) {
+  .customer-services {
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*------------------------------ /customer-info ------------------------------*/
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.customer-info__item {
+  border-bottom: 1px solid #c1c1c1;
+  color: #616161;
+  padding-bottom: 10px;
+  margin: 0 0 10px 0;
+}
+.customer-info__item:hover {
+  cursor: default;
+}
+.customer-info__item-header {
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+.customer-info__item-content {
+  margin: 0;
+}
